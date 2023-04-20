@@ -36,7 +36,10 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
           return `${d.properties.BARRIO}\n${cantReclamos} denuncias\nCantidad de Habitantes: ${cantidadHabitantes}\nRatio: ${ratio}\nDuracion Total Denuncias: ${duracionTotal.toFixed(0)} dias`;
         },
       })
-    ]
+    ],
+    style:{
+      background: "transparent"
+    },
   });
 
   d3.select('#chart2').append(() => chart2);

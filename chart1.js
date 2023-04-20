@@ -32,6 +32,7 @@ d3.dsv(',',"resultado.csv", d3.autoType).then((data) => {
       color: "black",
       fontFamily: "helvetica",
       fontSize: "15px",
+      background: "transparent"
     },
     marginLeft: 55,
     marginRight: 55,
