@@ -32,3 +32,43 @@ function scrollFunction() {
   }
 }
 
+document.querySelectorAll('a[href="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  });
+});
+
+// ocultar todos los canvas
+document.querySelectorAll('canvas').forEach(canvas => canvas.style.display = 'none');
+
+// mostrar canvas correspondiente al botón clickeado
+function updateChart(chartID) {
+  // ocultar todos los canvas
+  document.querySelectorAll('canvas').forEach(canvas => canvas.style.display = 'none');
+  // mostrar canvas correspondiente
+  document.getElementById(chartID).style.display = 'block';
+}
+
+// evento click para los botones
+document.getElementById("b-button").addEventListener("click", function() {
+  updateChart("myChart");
+});
+
+document.getElementById("p-button").addEventListener("click", function() {
+  updateChart("myChart2");
+});
+
+document.getElementById("c-button").addEventListener("click", function() {
+  updateChart("myChart3");
+});
+
+document.getElementById("vu-button").addEventListener("click", function() {
+  updateChart("myChart4");
+});
+
+document.getElementById("vs-button").addEventListener("click", function() {
+  updateChart("myChart5");
+});
+
+// por default mostrar el canvas correspondiente a Palermo
+document.getElementById("myChart2").style.display = 'block';

@@ -8,13 +8,13 @@ var myChart4 = new Chart(ctx, {
              label: '%',
              data: [79.38, 20.62],
              backgroundColor: [
-                 'rgba(89, 41, 10, 1)',
-                 'rgba(127,127,127,1)',
+                'rgba(159, 213, 103, 0.8)',
+                 'rgba(127,127,127,0.6)',
                  
              ],
              borderColor: [
-                'rgba(89, 41, 10, 0)',
-                'rgba(127,127,127,0)',
+                'rgba(158, 204, 138, 1)',
+                'rgba(127,127,127,1)',
                  
              ],
              borderWidth: 4

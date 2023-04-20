@@ -15,7 +15,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     color: {
       type: 'quantize',
       n: 8,
-      scheme: 'ylorbr',
+      scheme: 'greens',
       label: 'Cantidad de denuncias',
       legend: true,
     },

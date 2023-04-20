@@ -4,6 +4,9 @@
         <title>Denuncias de Vehiculos</title>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <link rel="stylesheet" href="Design.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
         <header>
@@ -63,39 +66,46 @@
         </div>
       </div>
 
-        <div class="block">
-          <div class="container"id="2">
-            <div class="title-container" style="margin-bottom: -200px;">
-              <h2>2. ¿De que canal viene la denuncia?</h2>
-            </div>
-            <div class="chart_2" >
-              <svg><div id="chart1"></div></svg>
-            </div>
-            <div class="chart_3" >
-              <svg><div id="chart5"></div></svg>
-              <div id="MyChart"></div>
-            </div>
+      <div class="block">
+        <div class="container" id="2">
+          <div class="title-container" style="margin-bottom: -200px;">
+            <h2>2. ¿De que canal viene la denuncia?</h2>
+          </div>
+          <div class="chart_2">
+            <svg>
+              <div id="chart1"></div>
+            </svg>
+          </div>
+          <div class="chart_3">
             <div class="chartBOX">
-              <div id="MyChart"></div>
-              <div id="MyChart2"></div>
-              <div id="MyChart3"></div>
-              <div id="MyChart4"></div>
-              <div id="MyChart5"></div>
+              <div class="Pie-container">
+                <canvas id="myChart"></canvas>
+                <canvas id="myChart2"></canvas>              
+                <canvas id="myChart3"></canvas>
+                <canvas id="myChart4"></canvas>
+                <canvas id="myChart5"></canvas>
+                <a href="#" id="b-button">Belgrano</a>
+                <a href="#" id="p-button">Palermo</a>
+                <a href="#" id="c-button">Caballito</a>
+                <a href="#" id="vu-button">Villa Urquiza</a>
+                <a href="#" id="vs-button">Villa Soldati</a>
+              </div>
             </div>
-            <div class="title-container">
-              <br><br>
-              <h3>Veamos que la mayor cantidad de denuncias proviene de parte de la App Denuncia Vial, 
-                siendo asi un exito total abarcando un total del 78% de las denuncias de vehiculos mal 
-                estacionados en la Ciudad De Buenos Aires en Enero de 2021. Si extraemos los barrios 
-                con mas denuncias, como se puede visualizar en el segundo grafico obtenemos que la 
-                población de los barrios que utiliza este canal para denunciar los casos de mal estacionamiento
-                son la gran mayoria. </h3>
-                <a id='sig'href="#3" style="margin-left: 14%;">↓</a>
-            </div>
-
+          </div>
+          <div class="title-container">
+            <br><br>
+            <h3>Veamos que la mayor cantidad de denuncias proviene de parte de la App Denuncia Vial, 
+              siendo asi un exito total abarcando un total del 78% de las denuncias de vehiculos mal 
+              estacionados en la Ciudad De Buenos Aires en Enero de 2021. Si extraemos los barrios 
+              con mas denuncias, como se puede visualizar en el segundo grafico obtenemos que la 
+              población de los barrios que utiliza este canal para denunciar los casos de mal estacionamiento
+              son la gran mayoria. </h3>
+              <a id='sig'href="#3" style="margin-left: 14%;">↓</a>
           </div>
         </div>
-
+      </div>
+        </div>
+      </div>
         <div class="block">
           <div class="container">
             <div class="chart" id="3">
