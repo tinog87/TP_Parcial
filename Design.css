@@ -97,7 +97,7 @@ header {
 }
 
 .block {
-    background-image:url("/Images/giff.gif");
+    background-image:url("giff.gif");
     box-sizing: content-box;
     background-size: cover;
     background-attachment: fixed;
@@ -120,7 +120,7 @@ header {
 }
 
 .parallax {
-    background-image: url("/Images/PARAL_G.gif");
+    background-image: url("PARAL_G.gif");
     box-sizing: content-box;
     background-size: cover;
     background-attachment: fixed;
