@@ -54,6 +54,7 @@ d3.dsv(',','Barrios_3.csv', d3.autoType).then((data) => {
         color: "black",
         fontFamily: "helvetica",
         fontSize: "10px",
+        background: "transparent"
       },
       marginLeft: 150,
       marginRight: 55,
