@@ -8,7 +8,7 @@ d3.dsv(',',"resultado.csv", d3.autoType).then((data) => {
          { x: "canal", 
          y: "prestacion",
          //fill:'domicilio_barrio',// para mi saquemolo, porque no nos da niguna conclusion
-         sort: { x: "y", reverse: true },
+         sort: { x: "y", reverse: false },
         }) ),
     ],
     color: {

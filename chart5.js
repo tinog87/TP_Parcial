@@ -13,7 +13,7 @@ d3.dsv(',',"resultado_filtrado_2.csv", d3.autoType).then((data) => {
       y: {  
         domain: ["VILLA SOLDATI", "VILLA URQUIZA", 
         "BELGRANO", "PALERMO", "CABALLITO"],
-        label: "Barrios con mas denuncias"
+        label: ""
       },
       x: {
         domain: [0.00,20.00,40.00,60.0,71.38,

@@ -10,7 +10,7 @@ d3.dsv(',',"resultado.csv", d3.autoType).then((data) => {
          { x: "canal", 
          y: "prestacion",
          fill:"gray",
-         sort: { x: "y", reverse: true },
+         sort: { x: "y", reverse: false },
         }) ),
         Plot.barY(datafilter_2,
           Plot.groupX({ y: "count" },
@@ -45,7 +45,6 @@ d3.dsv(',',"resultado.csv", d3.autoType).then((data) => {
       label:"Canal",
     },
     y: {
-      label:"Cantidad",
       ticks:10,
     }
   });
