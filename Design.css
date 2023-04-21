@@ -405,15 +405,25 @@ html{
     margin-top: 40%;
   }
   
-  .Pie-container a {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    margin-top: 10px;
-    width: 100px;
-  }
-  .Pie-container a:hover {
-    color: gray;
-  }
+.Pie-container a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e5e5e5;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  line-height: 90px; /* Agregado para centrar verticalmente */
+  vertical-align: middle;
+}
 
+.Pie-container a:hover {
+  background-color: #d9d9d9;
+  color: gray;
+  cursor: pointer;
+}

@@ -72,3 +72,31 @@ document.getElementById("vs-button").addEventListener("click", function() {
 
 // por default mostrar el canvas correspondiente a Palermo
 document.getElementById("myChart2").style.display = 'block';
+
+// Seleccionar todos los botones
+const buttons = document.querySelectorAll('.Pie-container a');
+
+// Iterar sobre cada botón
+buttons.forEach(button => {
+  button.addEventListener('click', (event) => {
+    // Evitar el comportamiento predeterminado del enlace
+    event.preventDefault();
+
+    // Eliminar la clase active de todos los botones
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Agregar la clase active al botón actual
+    button.classList.add('active');
+
+    // Cambiar el color del piechart correspondiente
+    const canvasId = button.getAttribute('id').replace('-button', '');
+    const canvas = document.getElementById(canvasId);
+    if (canvas) {
+      canvas.style.backgroundColor = '#d9d9d9';
+      canvas.style.color = 'gray';
+    }
+  });
+});
+
