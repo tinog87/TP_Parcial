@@ -411,19 +411,23 @@ html{
   text-align: center;
   color: black;
   margin: 10px;
-  width: 100px;
+  width: 130px;
   height: 50px;
   border: none;
   border-radius: 25px;
   background-color: #e5e5e5;
   font-weight: bold;
-  transition: background-color 0.3s;
-  line-height: 90px; /* Agregado para centrar verticalmente */
+  transition: background-color 0.6s;
+  line-height: 50px; /* Agregado para centrar verticalmente */
   vertical-align: middle;
 }
 
 .Pie-container a:hover {
-  background-color: #d9d9d9;
-  color: gray;
+  background-color: #555555;
+  color: rgb(255, 255, 255);
   cursor: pointer;
+}
+.Pie-container a.active {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
