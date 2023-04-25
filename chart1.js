@@ -31,7 +31,7 @@ d3.dsv(',',"resultado.csv", d3.autoType).then((data) => {
     line:true,
     nice:false,
     width: 800,
-    height: 700,
+    height: 800,
     style: {
       color: "black",
       fontFamily: "helvetica",

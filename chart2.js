@@ -37,6 +37,11 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         },
       })
     ],
+    tooltip: {
+      fill: "red",
+      stroke: "blue",
+      r: 8
+    },
     style:{
       background: "transparent"
     },
