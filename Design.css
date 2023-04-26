@@ -132,15 +132,15 @@ header {
     text-align: left;
 }
 .parallax h2 {
-  margin-left:32%;
-  margin-top: -5%;
+  margin-left:14%;
+  margin-top: -4%;
 
 }
 .parallax a {
   display: block;
   font-size:xx-large;
-  margin-top: 20%;
-  margin-left: 17%;
+  margin-top: 30%;
+  margin-left: 14%;
   font-weight: 600;
   color: #000000;
   text-decoration:none;
@@ -176,7 +176,7 @@ header {
 
 #text {
     position: absolute;
-    font-size: 5em;
+    font-size: 4em;
     color: #000000;
 }
 
@@ -341,6 +341,7 @@ html{
   .texto_normal h4 {
     font-weight: 400;
   }
+  
   
   footer {
     background-color: rgba(146, 132, 132, 0.097);
